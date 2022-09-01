@@ -1,0 +1,12 @@
+127.0.0.1 - - [26/Aug/2022:15:25:06 +0100] "GET /superbet/updatetirage?coderace=4 HTTP/1.1" 200 60
+127.0.0.1 - - [26/Aug/2022:15:25:06 +0100] "GET /superbet/updateairtime?caissier=81&coderace=4 HTTP/1.1" 200 22
+127.0.0.1 - - [26/Aug/2022:15:25:12 +0100] "GET /superbet/login.jsp HTTP/1.1" 200 3601
+127.0.0.1 - - [26/Aug/2022:15:25:15 +0100] "POST /superbet/authentication HTTP/1.1" 200 67019
+127.0.0.1 - - [26/Aug/2022:15:25:16 +0100] "GET /superbet/retrievePartner?coderace=0 HTTP/1.1" 200 23
+127.0.0.1 - - [26/Aug/2022:15:25:28 +0100] "GET /superbet/retrieveUser?coderace=ramatbet HTTP/1.1" 200 21
+127.0.0.1 - - [26/Aug/2022:15:25:29 +0100] "POST /superbet/reporting HTTP/1.1" 200 67955
+127.0.0.1 - - [26/Aug/2022:15:25:30 +0100] "GET /superbet/retrievePartner?coderace=0 HTTP/1.1" 200 23
+127.0.0.1 - - [26/Aug/2022:15:25:36 +0100] "GET /superbet/updatetirage?coderace=4 HTTP/1.1" 200 60
+127.0.0.1 - - [26/Aug/2022:15:25:37 +0100] "GET /superbet/updateairtime?caissier=81&coderace=4 HTTP/1.1" 200 22
+127.0.0.1 - - [26/Aug/2022:15:25:47 +0100] "POST /superbet/administration HTTP/1.1" 200 67096
+127.0.0.1 - - [26/Aug/2022:15:25:47 +0100] "GET /superbet/retrievePartner?coderace=0 HTTP/1.1" 200 23

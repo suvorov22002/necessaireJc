@@ -1,0 +1,44 @@
+août 20, 2022 4:42:16 PM org.apache.catalina.core.StandardContext listenerStart
+GRAVE: Erreur lors de la configuration de la classe d'écoute de l'application (application listener) config.InitialisationDAOFactory
+java.lang.ClassNotFoundException: config.InitialisationDAOFactory
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	at org.apache.catalina.core.DefaultInstanceManager.loadClass(DefaultInstanceManager.java:532)
+	at org.apache.catalina.core.DefaultInstanceManager.loadClassMaybePrivileged(DefaultInstanceManager.java:514)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:142)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4854)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:983)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1660)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+août 20, 2022 4:42:16 PM org.apache.catalina.core.StandardContext listenerStart
+GRAVE: L''installation des écouteurs (listeners) de l''application a été sautée suite aux erreurs précédentes
+août 20, 2022 4:42:23 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextInitialized()
+août 20, 2022 4:42:23 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextInitialized()
+août 20, 2022 4:42:24 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1ee9465f')
+août 20, 2022 4:48:34 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextDestroyed()
+août 20, 2022 4:48:34 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextDestroyed()
+août 20, 2022 4:54:49 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextInitialized()
+août 20, 2022 4:54:49 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextInitialized()
+août 20, 2022 4:54:49 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@2ddc578b')
+août 20, 2022 5:19:34 PM org.apache.catalina.core.ApplicationContext log
+INFOS: SessionListener: contextDestroyed()
+août 20, 2022 5:19:34 PM org.apache.catalina.core.ApplicationContext log
+INFOS: ContextListener: contextDestroyed()
