@@ -421,6 +421,12 @@ CREATE TABLE IF NOT EXISTS `keno` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
+-- Contraintes pour la table `keno`
+--
+ALTER TABLE `keno`
+  ADD CONSTRAINT `keno_ibfk_1` FOREIGN KEY (`coderace`) REFERENCES `partner` (`coderace`) ON DELETE CASCADE ON UPDATE NO ACTION;
+
+--
 -- Contenu de la table `keno`
 --
 
@@ -844,13 +850,7 @@ ALTER TABLE `freeslip`
 --
 ALTER TABLE `game_cycle`
   ADD CONSTRAINT `game_cycle_ibfk_2` FOREIGN KEY (`idpartner`) REFERENCES `partner` (`idPartner`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Contraintes pour la table `keno`
---
-ALTER TABLE `keno`
-  ADD CONSTRAINT `keno_ibfk_1` FOREIGN KEY (`coderace`) REFERENCES `partner` (`coderace`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
+  
 --
 -- Contraintes pour la table `mouvement`
 --
