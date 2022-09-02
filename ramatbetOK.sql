@@ -580,6 +580,27 @@ CREATE TABLE IF NOT EXISTS `mouvement` (
 
 
 -- --------------------------------------------------------
+DROP TABLE IF EXISTS `cagnotte`;
+CREATE TABLE IF NOT EXISTS `cagnotte` (
+  `idCagnotte` bigint(20) NOT NULL,
+  `barcode` bigint(20) DEFAULT NULL,
+  `day` varchar(255) DEFAULT NULL,
+  `give` int(11) DEFAULT NULL,
+  `heur` varchar(255) DEFAULT NULL,
+  `jeu` varchar(255) DEFAULT NULL,
+  `lot` varchar(255) DEFAULT NULL,
+  `idmise` bigint(20) DEFAULT NULL,
+  `idPartner` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`idCagnotte`),
+  KEY `FKs2gj8vok62o9l6tuf4xs0gdp5` (`idPartner`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+--
+-- Contraintes pour la table `cagnotte`
+--
+ALTER TABLE `cagnotte`
+  ADD CONSTRAINT `FKs2gj8vok62o9l6tuf4xs0gdp5` FOREIGN KEY (`idPartner`) REFERENCES `partner` (`idPartner`);
+COMMIT;
 
 --
 -- Structure de la table `paril`
