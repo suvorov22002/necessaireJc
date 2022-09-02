@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `groupe` (
 --
 
 INSERT INTO `groupe` (`idgroupe`, `nomgroupe`, `zone`, `idPartner`, `idbonus`, `state`) VALUES
-(1, 'superbet', 'yaounde', 1, 1, '1');
+(1, 'ramatbet', 'yaounde', 1, 1, '1');
 
 -- --------------------------------------------------------
 
@@ -128,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `salle` (
 --
 
 INSERT INTO `salle` (`idsalle`, `nomsalle`, `localisation`, `idgroupe`) VALUES
-(1, 'superbet carriere', 'carriere', 1);
+(1, 'ramatbet carriere', 'carriere', 1);
 
 -- --------------------------------------------------------
 
@@ -277,7 +277,7 @@ CREATE TABLE IF NOT EXISTS `config` (
 --
 
 INSERT INTO `config` (`idconfig`, `percent`, `bonusrate`, `idsalle`, `coderace`, `bnkmin`, `bnkmax`, `bnpmin`, `bnpmax`, `bndmin`, `bndmax`, `config`) VALUES
-(1, 0.92, 0.005, 1, 'superbet', 500, 600, 600, 5000, 600, 5000, 0);
+(1, 0.92, 0.005, 1, 'ramatbet', 500, 600, 600, 5000, 600, 5000, 0);
 
 -- --------------------------------------------------------
 
@@ -431,7 +431,7 @@ ALTER TABLE `keno`
 --
 
 INSERT INTO `keno` (`idKeno`, `drawnumbK`, `bonusKcod`, `bonusKamount`, `drawnumK`, `heureTirage`, `multiplicateur`, `sbonuskcod`, `idsalle`, `started`, `coderace`) VALUES
-(1, '1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20', 0, 0, 0, '01/01/2020-12:00:00', '2', 0, 1, 1, 'superbet');
+(1, '1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20', 0, 0, 0, '01/01/2020-12:00:00', '2', 0, 1, 1, 'ramatbet');
 
 -- --------------------------------------------------------
 
@@ -817,7 +817,7 @@ CREATE TABLE IF NOT EXISTS `xtradraw` (
 --
 
 INSERT INTO `xtradraw` (`idxtra`, `xtraMin`, `xtraMax`, `countDraw`, `countDrawx`, `coderace`) VALUES
-(1, 20, 100, 2, 0, 'superbet');
+(1, 20, 100, 2, 0, 'ramatbet');
 
 --
 -- Contraintes pour les tables exportées
